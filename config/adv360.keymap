@@ -83,7 +83,7 @@
         &trans   &kp LPAR  &kp RPAR  &kp SEMI  &kp COLON &kp PRCNT &trans                                           &trans &trans    &trans   &trans   &trans    &trans   &trans
         &trans   &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT  &kp COMMA &trans                                           &trans &kp GRAVE &kp SQT  &kp DQT  &kp QMARK &kp FSLH &trans
         &trans   &kp CARET &kp EQUAL &kp UNDER &kp DLLR  &kp STAR  &trans         &trans &trans &trans &trans       &trans &kp AMPS  &kp EXCL &kp AT   &kp HASH  &kp TILDE &trans
-        &trans   &tog 5    &kp PIPE  &kp MINUS &kp PLUS  &kp TILDE               &trans &trans                             &kp BSLH  &trans   &kp LT   &kp GT    &trans   &trans
+        &trans   &trans    &kp PIPE  &kp MINUS &kp PLUS  &kp TILDE               &trans &trans                             &kp BSLH  &trans   &kp LT   &kp GT    &trans   &trans
         &trans   &trans    &trans    &trans    &trans               &trans &trans &trans &trans &trans &trans              &trans    &trans   &trans   &trans    &trans
       >;
     };
