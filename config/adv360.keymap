@@ -18,7 +18,7 @@
           tapping-term-ms = <220>;
           quick-tap-ms = <150>;
           require-prior-idle-ms = <150>;
-          flavor = "balanced";
+          flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
     };
@@ -52,7 +52,7 @@
         &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                           &mo 3 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
         &trans &trans &trans &trans &trans &trans  &kp C_NEXT                                      &kp PSCRN &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans &tog 4  &kp C_PREV   &trans &trans &trans &trans        &kp LS(C_MUTE) &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
+        &trans &tog 5 &trans &trans &trans &trans                      &trans &trans                     &trans &trans &trans &trans  &trans  &trans
         &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
       >;
     };
@@ -77,9 +77,15 @@
       >;
     };
 
-    extra2 { 
-      display-name = "Purple";    
-      status = "reserved";
+    extra2 {
+      display-name = "Sym";
+      bindings = <
+        &trans   &kp LPAR  &kp RPAR  &kp SEMI  &kp COLON &kp PRCNT &trans                                           &trans &trans    &trans   &trans   &trans    &trans   &trans
+        &trans   &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT  &kp COMMA &trans                                           &trans &kp GRAVE &kp SQT  &kp DQT  &kp QMARK &kp FSLH &trans
+        &trans   &kp CARET &kp EQUAL &kp UNDER &kp DLLR  &kp STAR  &trans         &trans &trans &trans &trans       &trans &kp AMPS  &kp EXCL &kp AT   &kp HASH  &kp TILDE &trans
+        &trans   &tog 5    &kp PIPE  &kp MINUS &kp PLUS  &kp TILDE               &trans &trans                             &kp BSLH  &trans   &kp LT   &kp GT    &trans   &trans
+        &trans   &trans    &trans    &trans    &trans               &trans &trans &trans &trans &trans &trans              &trans    &trans   &trans   &trans    &trans
+      >;
     };
 
     extra3 { 
