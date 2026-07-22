@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: refil
-      revision: f1d5fc73
+      revision: 86114880
       import: app/west.yml
   self:
     path: config
